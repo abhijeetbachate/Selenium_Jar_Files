@@ -1,0 +1,31 @@
+ant Configuration for generating reports in junit
+============================================
+
+1. go to google and search for download ant.
+2. click on first link
+3. down load apache-ant-1.9.7
+4.after downloading unzip
+5.copy the complete path
+6.go to user environment variables
+7. create new variable by clicking new
+and Enter variable name as ANT_HOME
+and variable value paste the path of apache-ant software
+8.create new variable by clicking new and Enter variable name as PATH and For variable value paste the path and at the end type \bin
+9. open  cmd and type ant. make ensure u get only message "build.xml does not exists "
+10. create a folder and store all the Jar files required to compile class files in the project.
+10. copy build.xml file from hcl_selenium folder shered to your current project
+11. edit build.xml. and makes changes
+         a. In line no 5 Enter project name to which you to generate reports
+         b. In line no.11 add the path of the folder where you have all jar files
+         c. create a folder where ant as to generate HTML reports and mention that path in line no.14
+         d. In line no.115 mention the class files to which you want to generate reports ( I mentioned in the class                          com/basicAnnotations/MyTestSuite.class")
+12. Now save the build.xml file
+13. copy the path of the project
+14. Open cmd and switch to that path. 
+15. type ant clean. and make ensure you getting build success msg
+16. type ant compile and make ensure you getting build success msg
+17. type ant run and make ensure you getting build success msg
+18. now goto folder created to store results / Html reports
+19. open idex.html with any browser and see the reports
+
+

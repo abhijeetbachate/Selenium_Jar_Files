@@ -1,0 +1,74 @@
+1. Read from database and write into excel...P1-1...
+2. Handle Certificate errors in all browsers..P4
+3. all sql commands...P1-3...
+4. Study usecase and write scenarios...P3
+5. How to write files through java code...P2-1...
+6. Read data from database through javacode...P1-2...
+7. String methods...P2-2...
+8. TypeCasting...Integer to string ...etc...
+9. How to work with proxy server... qtpselenium webportal
+==========================================================
+10. How to get system name from cmd.
+Ans: >hostname
+==========================================================
+11. how to check the version of the Oracle database installed through cmd
+Ans. cmd>sqlplus
+shows the version
+If you enter username and pwd it shows complete version
+==========================================================
+12. how to check the port number used by oracle db
+a. below command  gives all ports used in the system.
+netstat -a is the command to get the list of all used ports in Windows
+b. if you know sid then go to cmd
+>tnsping sid
+for oracle express id tnsping xe press enter button you can see port number
+
+==========================================================
+13. how to get port number of the oracle db by java code.
+
+==========================================================
+14. how get get service id or sid through cmd?
+Ans:  sql> select value from v$parameter where name like '%service_name%';
+==========================================================
+TNS -Transparent Network Substrate
+
+
+==========================================================
+15. How to change the port number in sql
+sql> exec DBMS_xdb.sethttpport('7070');
+==========================================================
+16. How we can execute stored procedures from java code.?
+==========================================================
+17. How to use time in seconds for  condition?
+long time1 = new Date().getTime()+1*60*1000;
+long time2 = new Date().getTime();
+while(time2<time1){
+System.out.println("not yet...");
+time2 = new Date().getTime();
+		}
+===========================================================
+To delete row in a table
+delete from emp where name='raj';
+==============================================================
+List of sql commands
+------------------------------------------	
+set wrap off
+set linesize 100
+set linesize 1000;
+set pagesize 5; pagesize default is 14
+set timing on;
+show user;
+clear screen;
+show all;
+===========================================================================
+|| is the concatenation operator in sql
+select distinct location from emp; shows no duplicate values
+Archive log list;
+-------------------------------------------------------------------------------==-------------------------------------------------------------------------------
+Single row functions.
+1. charect manupulation functions
+lower()
+upper()
+initcap();
+concat(str1,str2);
+substr(src string ,startingindex,lengthofsubstring)
